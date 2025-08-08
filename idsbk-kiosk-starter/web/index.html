@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDSBK Kiosk</title>
+    <style>
+      body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:#0b0f1a; color:#e8eef9;}
+      .wrap { display:flex; min-height:100vh; align-items:center; justify-content:center; }
+      .card { width:min(900px, 92vw); border:1px solid #1c2333; border-radius:16px; padding:24px 28px; background:#101726; box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+      .row { display:flex; gap:12px; align-items:baseline; justify-content:space-between; }
+      .title { font-size:28px; font-weight:700; letter-spacing:.3px; }
+      .small { opacity:.7; font-size:14px;}
+      .badge { font-size:12px; padding:4px 8px; border-radius:100px; border:1px solid #2a3550;}
+      .live { background:#0b2a11; border-color:#1c8b36; color:#9bf6b0;}
+      .plan { background:#2a1b0b; border-color:#8b5e1c; color:#ffd59b;}
+      .list { margin-top:16px; display:grid; gap:10px; }
+      .item { display:grid; grid-template-columns: 1fr auto auto; gap:12px; align-items:center; padding:12px 14px; border-radius:12px; background:#0e1424; border:1px solid #18223a;}
+      .route { font-weight:700; font-size:24px; letter-spacing:.3px;}
+      .headsign { opacity:.9; }
+      .time { font-weight:700; font-size:22px;}
+      .mins { opacity:.8; font-size:14px; }
+      input { background:#0e1424; border:1px solid #18223a; color:#e8eef9; padding:8px 10px; border-radius:8px; outline:none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
